@@ -1,8 +1,8 @@
 absl-py
 attrs>=19.1.0
 flatbuffers>=2.0
-opencv-contrib-python
 protobuf>=3.11,<4
+opencv-contrib-python
 sounddevice>=0.4.4
 matplotlib
 numpy

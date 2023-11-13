@@ -8,7 +8,6 @@ nav_order: 1
 
 ----
 
-
 **Attention:** *We have moved to
 [https://developers.google.com/mediapipe](https://developers.google.com/mediapipe)
 as the primary developer documentation site for MediaPipe as of April 3, 2023.*

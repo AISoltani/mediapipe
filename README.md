@@ -6,7 +6,7 @@ title: Home
 nav_order: 1
 ---
 
-----
+---
 
 **Attention:** *We have moved to
 [https://developers.google.com/mediapipe](https://developers.google.com/mediapipe)

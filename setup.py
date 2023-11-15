@@ -71,7 +71,6 @@ def _parse_requirements(path):
         if not (line.isspace() or line.startswith('#'))
     ]
 
-
 def _get_long_description():
   # Fix the image urls.
   return re.sub(
@@ -129,7 +128,6 @@ def _modify_opencv_cmake_rule(link_opencv):
     build_file = open(MP_THIRD_PARTY_BUILD, 'w')
     build_file.write(content)
     build_file.close()
-
 
 def _add_mp_init_files():
   """Add __init__.py to mediapipe root directories to make the subdirectories indexable."""

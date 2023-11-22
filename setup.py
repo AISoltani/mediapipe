@@ -14,7 +14,6 @@ limitations under the License.
 
 Setup for MediaPipe package with setuptools.
 """
-
 import glob
 import os
 import platform
@@ -24,7 +23,6 @@ import shlex
 import shutil
 import subprocess
 import sys
-
 import setuptools
 from setuptools.command import build_ext
 from setuptools.command import build_py
@@ -110,7 +108,6 @@ def _check_bazel():
     )
     sys.exit(-1)
 
-
 def _modify_opencv_cmake_rule(link_opencv):
   """Modify opencv_cmake rule to build the static opencv libraries."""
 
@@ -162,7 +159,6 @@ def _invoke_shell_command(shell_commands):
   except subprocess.CalledProcessError as e:
     print(e)
     sys.exit(e.returncode)
-
 
 class GeneratePyProtos(build_ext.build_ext):
   """Generate MediaPipe Python protobuf files by Protocol Compiler."""
@@ -358,7 +354,6 @@ class BazelExtension(setuptools.Extension):
         self.relpath.replace(posixpath.sep, os.path.sep), self.target_name)
     setuptools.Extension.__init__(self, ext_name, sources=[])
 
-
 class BuildExtension(build_ext.build_ext):
   """A command that runs Bazel to build a C/C++ extension."""
 
@@ -487,7 +482,6 @@ class Install(install.install):
     build_py_obj = self.distribution.get_command_obj('build_py')
     build_py_obj.link_opencv = self.link_opencv
     install.install.run(self)
-
 
 class Restore(setuptools.Command):
   """Restore the modified mediapipe source files."""

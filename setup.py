@@ -14,6 +14,7 @@ limitations under the License.
 
 Setup for MediaPipe package with setuptools.
 """
+
 import glob
 import os
 import platform
